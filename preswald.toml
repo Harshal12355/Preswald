@@ -1,13 +1,13 @@
 [project]
-title = "Preswald Interview Project"
+title = "Wine Reviews Interview Project"
 version = "0.1.0"
 port = 8501
 slug = "harshal-thachapully-preswald-project"  
-entrypoint = "hello.py"    
+entrypoint = "app.py"    
 
 [branding]
 name = "Preswald Project"
-logo = "images/logo.png"
+logo = "images/wine_logo.png"
 favicon = "images/favicon.ico"
 primaryColor = "#F89613"
 
