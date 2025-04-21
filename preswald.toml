@@ -2,18 +2,18 @@
 title = "Wine Reviews Interview Project"
 version = "0.1.0"
 port = 8501
-slug = "harshal-thachapully-preswald-project"  
+slug = "harshal-thachapully-wine_reviews-project"  
 entrypoint = "app.py"    
 
 [branding]
 name = "Preswald Project"
-logo = "images/wine_logo.png"
+logo = "images/logo_star.png"
 favicon = "images/favicon.ico"
 primaryColor = "#F89613"
 
-[data.titanic_csv]
+[data.star_csv]
 type = "csv"
-path = "data/titanic.csv"
+path = "data/cleaned_data/cleaned_star_data.csv"
 
 [logging]
 level = "INFO"  

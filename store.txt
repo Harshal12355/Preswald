@@ -1,0 +1,47 @@
+[project]
+title = "Wine Reviews Interview Project"
+version = "0.1.0"
+port = 8501
+slug = "harshal-thachapully-wine_reviews-project"  
+entrypoint = "hello.py"    
+
+[branding]
+name = "Preswald Project"
+logo = "images/logo_star.png"
+favicon = "images/favicon.ico"
+primaryColor = "#F89613"
+
+[data.star_csv]
+type = "csv"
+path = "data/cleaned_data/cleaned_star_data.csv"
+
+[logging]
+level = "INFO"  
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+[telemetry]
+enabled = true
+
+[project]
+title = "Wine Reviews Interview Project"
+version = "0.1.0"
+port = 8501
+slug = "harshal-thachapully-wine_reviews-project"  
+entrypoint = "hello.py"    
+
+[branding]
+name = "Preswald Project"
+logo = "images/logo_star.png"
+favicon = "images/favicon.ico"
+primaryColor = "#F89613"
+
+[data.titanic_csv]
+type = "csv"
+path = "data/raw_data/titanic.csv"
+
+[logging]
+level = "INFO"  
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+[telemetry]
+enabled = true
