@@ -7,7 +7,9 @@ from preswald import (
     query,
     slider,
     topbar,
-    checkbox
+    checkbox,
+    sidebar,
+    separator
 )
 import plotly.express as px
 from plotly.subplots import make_subplots
@@ -16,6 +18,7 @@ import time
 import numpy as np
 
 topbar()
+sidebar(defaultopen=True)
 
 text("# Star Type Analysis and Prediction")
 text(" ## 📊 Preswald and Star Type Analytics & Prediction")
@@ -46,6 +49,8 @@ Ro = 6.9551 x 10^8 m
 # Load the CSV from data/cleaned_data/cleaned_star_data.csv
 # df = load()
 
+separator()
+
 connect()
 df = get_df('star_csv')
 
@@ -67,6 +72,7 @@ sql_query = """
 filtered_df = query(sql_query, "star_csv")
 cols = filtered_df.columns.tolist()
 
+separator()
 def create_hr_diagram():
     
     # Create the Hertzsprung-Russell diagram
@@ -156,6 +162,9 @@ def create_hr_diagram():
 
 # Call the function to display the H-R diagram
 create_hr_diagram()
+
+separator()
+
 # from src.box_plots import separate_box_plots <-- not sure why the imports are not working (No module named 'src')
 def separate_box_plots():
     text("### Temperature Distribution by Star Type")
@@ -170,6 +179,8 @@ def separate_box_plots():
 
 # Call the function with separate plots instead
 separate_box_plots()
+
+separator()
 
 def compare_star_types_individual():
     text("# Star Type Comparison Tool")

@@ -1,110 +1,47 @@
 # Star Type Analysis and Prediction Tool
 
 ## Project Overview
+A web-based tool for analyzing stellar data, visualizing star classifications, and comparing star properties across different types. Built with Preswald framework for interactive astronomical data exploration.
 
-This project provides a comprehensive web-based tool for analyzing and visualizing stellar data, with a focus on star classification and attribute comparison. Built using the Preswald framework, it offers interactive visualizations and statistical analysis of star properties across different star types.
+## Key Features
 
-## Features
+### Data Exploration
+- Quick overview of the star dataset with 6 classes (Brown Dwarf, Red Dwarf, White Dwarf, Main Sequence, Supergiant, Hypergiant)
+- Visual representation of the dataset's structure
 
-### 1. Data Exploration
+### Visualizations
+- **Hertzsprung-Russell Diagram**: Interactive scatter plot showing temperature vs. luminosity relationships
+  - Color-coded by star type with astronomical conventions (reversed temperature axis)
+  - Annotated regions highlighting star classification groups
+  
+- **Distribution Analysis**: Box plots showing temperature and luminosity distributions by star type
 
-The application begins with a basic overview of the dataset, displaying:
-- A header table showing the first few rows of the star dataset
-- Information about the 6 classes of stars in the dataset:
-  - Brown Dwarf (Type 0)
-  - Red Dwarf (Type 1) 
-  - White Dwarf (Type 2)
-  - Main Sequence (Type 3)
-  - Supergiant (Type 4)
-  - Hypergiant (Type 5)
+- **Interactive Comparison Tool**: Checkbox-based selection to compare specific star types
+  - Box plots and strip plots for Temperature, Luminosity, and Radius
+  - Statistical tables with key metrics for selected star types
 
-### 2. Hertzsprung-Russell Diagram
+## Technical Features
+- SQL queries for data filtering
+- Plotly Express visualizations with specialized astronomical customizations
+- Categorical data handling with proper labeling
+- Statistical analysis with comprehensive metrics
 
-The app features a comprehensive Hertzsprung-Russell (H-R) diagram, which is fundamental in stellar astronomy:
-- Interactive scatter plot showing the relationship between temperature and luminosity
-- Logarithmic scale for luminosity to better visualize the vast range of stellar brightness
-- Color-coded points representing different star types
-- Reversed x-axis (temperature) following astronomical convention
-- Annotated regions highlighting key star groups (Giants, Supergiants, Main Sequence, White Dwarfs, Brown/Red Dwarfs)
-- Hover functionality showing additional data (Radius, Star color, Spectral Class)
-- Educational text explaining the significance of the H-R diagram in stellar classification
-
-### 3. Distribution Analysis
-
-The tool provides box plots for key stellar properties:
-- Temperature distribution by star type
-- Luminosity distribution by star type
-- Simple visualizations with clear labeling and consistent formatting
-
-### 4. Interactive Star Type Comparison Tool
-
-A sophisticated interactive comparison tool allows users to:
-- Select specific star types via checkboxes for detailed analysis
-- View and compare distributions of Temperature, Luminosity, and Radius across selected star types
-- Analyze both box plots (showing statistical distribution) and strip plots (showing individual data points)
-- See clear visualizations with:
-  - Jittered points for better visibility
-  - Notched box plots showing confidence intervals
-  - Logarithmic scaling for luminosity
-  - Proper categorical axis handling
-
-### 5. Statistical Analysis
-
-For each selected star type, the tool generates detailed statistical tables for:
-- Temperature statistics
-- Luminosity statistics 
-- Radius statistics
-
-Each table includes:
-- Count of stars
-- Minimum values
-- Mean values
-- Median values
-- Maximum values
-- Standard deviation
-- Both numerical type IDs and descriptive labels
-
-## Technical Implementation
-
-### Data Handling
-- Utilizes SQL queries to filter and process stellar data
-- Converts numerical star type values to descriptive labels for better readability
-- Handles categorical data appropriately for visualization
-
-### Visualization Techniques
-- Uses Plotly Express for interactive visualizations
-- Implements specialized astronomical conventions (reversed temperature axis)
-- Applies appropriate scales (logarithmic for luminosity)
-- Provides consistent styling and formatting across visualizations
-
-### User Interface
-- Interactive checkbox selection for customizing analysis
-- Clear section headers and explanatory text
-- Consistent layout and design elements
-
-## Educational Value
-
-The tool serves as both an analytical instrument and an educational resource:
-- Explains key astronomical concepts (H-R diagram, stellar classification)
-- Provides context for different star types and their characteristics
-- Helps users understand the relationships between stellar properties
-- Allows comparison of different star categories side-by-side
-
-## Installation and Dependencies
-
-The application relies on:
-- Preswald framework for the web interface
-- Pandas for data manipulation
-- Plotly Express for interactive visualizations
-- NumPy for numerical operations
+## Dependencies
+- Preswald framework
+- Pandas, Plotly Express, NumPy
 
 ## Usage
+1. View dataset overview
+2. Explore the H-R diagram
+3. Use the comparison tool to select star types
+4. Analyze visualizations and statistics
 
-The application is designed to be intuitive and user-friendly:
-1. View the general dataset overview
-2. Explore the H-R diagram to understand stellar classification
-3. Use the comparison tool to select specific star types
-4. Analyze the resulting visualizations and statistics
-5. Compare different properties across selected star types
-
-This project offers a powerful way to explore stellar data, understand astronomical concepts, and visualize the diversity of stars in our universe.
+## Issues I had
+- Had trouble making visualisations using loops
+- Had trouble making subplots
+- Found the visualisations to be static, had trouble changing them using the slider
+- Could not modularise the code, for some reason it would not recognise modules that were made, so all the code had to be in the same file 
+- Tried to change the logo and the favicon, but it would not change
+    - removed them but still kept the file path and it did not change anything, not even an error 
+    - instead when I removed them from the images folder, did preswald run and then it reuploaded the icons and the favicon, so basically it was impossible to change them 
+- Had trouble using the online code editor, the pointer was in a weird position and whenever I exited the code editor would wipe out all the code I wrote, so I downloaded the project 

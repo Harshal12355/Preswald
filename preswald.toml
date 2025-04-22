@@ -1,14 +1,14 @@
 [project]
-title = "Wine Reviews Interview Project"
+title = "Star Analysis Interview Project"
 version = "0.1.0"
 port = 8501
-slug = "harshal-thachapully-wine_reviews-project"  
+slug = "harshal-thachapully-star-analysis-project"  
 entrypoint = "app.py"    
 
 [branding]
-name = "Preswald Project"
-logo = "images/logo_star.png"
-favicon = "images/favicon.ico"
+name = "Star Analysis Interview Project"
+logo = "../images/astronaut.png"
+favicon = "../images/astronaut.png"
 primaryColor = "#F89613"
 
 [data.star_csv]
